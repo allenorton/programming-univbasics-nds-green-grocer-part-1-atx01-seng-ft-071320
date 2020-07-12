@@ -22,6 +22,7 @@ def consolidate_cart(cart)
       end 
     end 
   end 
+  
   nu_cart.uniq 
   binding.pry 
 end 
