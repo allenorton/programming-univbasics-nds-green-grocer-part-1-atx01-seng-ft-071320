@@ -22,10 +22,6 @@ def consolidate_cart(cart)
         nu_cart_hash[:count] +=1 
       end 
     end 
-    else 
-      food_hash[:count] = 1 
-      nu_cart << food_hash
-    end 
   end 
   nu_cart 
   binding.pry 
