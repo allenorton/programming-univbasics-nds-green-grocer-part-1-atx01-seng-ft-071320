@@ -22,6 +22,7 @@ def consolidate_cart(cart)
         nu_cart_hash[:count] +=1 
       end 
     end 
+    end
   end 
   nu_cart 
   binding.pry 
