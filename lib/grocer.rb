@@ -20,10 +20,9 @@ def consolidate_cart(cart)
       is_item = find_item_by_name_in_collection(food_hash[:key], cart)
       if not is_item
         nu_cart << food_hash
+      else 
+        food_hash[:count] +=1 
       end 
-    end 
-    if nu_cart.include?(food_hash[:item])
-      nu_cart[food_hash[:item]][:count] += 1
     end 
   end 
   nu_cart 
