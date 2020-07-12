@@ -18,7 +18,7 @@ def consolidate_cart(cart)
     food_hash.each do |key, value|
       if food_hash[:key] == find_item_by_name_in_collection(food_hash[:key], cart)
         nu_cart << food_hash
-        puts nu_cart.flatten.uniq 
+        puts nu_cart.flatten.uniq! 
       end 
     end 
   end 
