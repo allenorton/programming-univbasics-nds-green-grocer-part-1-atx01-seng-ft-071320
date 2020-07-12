@@ -21,6 +21,7 @@ def consolidate_cart(cart)
       if nu_cart_hash[:item] === food[:item]
         nu_cart_hash[:count] +=1 
       end 
+    else 
       
     end 
   end 
