@@ -21,9 +21,6 @@ def consolidate_cart(cart)
       if not is_item
         nu_cart << food_hash
       end 
-      if is_item
-        food_hash[:count] += 1 
-      end 
     end 
   end 
   nu_cart 
