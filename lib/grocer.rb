@@ -13,11 +13,13 @@ def find_item_by_name_in_collection(name, collection)
 end
 
 def consolidate_cart(cart)
-  consolidated_cart = []
+  nu_cart = []
   cart.each do |food_hash|
     food_hash.each do |key, value|
       if food_hash[:key] == find_item_by_name_in_collection(food_hash[:key], cart)
-        consolidated_cart << food_hash
+        nu_cart << food_hash
+        cons_cart = nu_cart.uniq 
+        cons_cart
       end 
     end 
   end 
