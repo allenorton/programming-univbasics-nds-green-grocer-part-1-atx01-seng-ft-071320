@@ -22,6 +22,8 @@ def consolidate_cart(cart)
         nu_cart << food_hash
       end 
     end 
+    if nu_cart.include?(food_hash[:item])
+      nu_cart[food_hash[:item]][:count] += 1
   end 
   nu_cart 
   binding.pry 
