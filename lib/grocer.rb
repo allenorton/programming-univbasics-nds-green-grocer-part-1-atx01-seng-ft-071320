@@ -17,8 +17,8 @@ def consolidate_cart(cart)
   cart.each do |food_hash|
     food_hash[:count] = 1 
     food_hash.each do |key, value|
-      food_hash[:count] += 1 
       if food_hash[:key] == find_item_by_name_in_collection(food_hash[:key], cart)
+        food_hash[:count] += 1 
         nu_cart << food_hash
       end 
     end 
