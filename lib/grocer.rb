@@ -23,7 +23,7 @@ def consolidate_cart(cart)
     end 
   end 
   nu_cart.each do |food_hash|
-    
+    food_hash.each do |key2, val2|
   end 
   binding.pry 
 end 
