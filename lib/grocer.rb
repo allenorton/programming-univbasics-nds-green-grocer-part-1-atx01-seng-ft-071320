@@ -22,7 +22,9 @@ def consolidate_cart(cart)
       end 
     end 
   end 
-  nu_cart.map{|food_hash| food_hash[:count] +=1}
+  nu_cart.map do |food_hash| 
+    food_hash[:count] +=1
+  end
   binding.pry 
 end 
 
